@@ -10,6 +10,15 @@ An end-to-end, high-performance Deep Reinforcement Learning project that trains 
 
 ---
 
+## 🎬 Agent Sprint Showcase
+
+<div align="center">
+  <img src="assets/sprint_preview.gif" alt="Humanoid-v5 SAC Sprint Demonstration" width="85%">
+  <p><em>Real-Time Evaluation of the Champion Policy (+3.20 m/s bipedal sprint, 8,900.0 peak return). Full 1080p video: <a href="assets/humanoid_sprint_demo.mp4"><b>assets/humanoid_sprint_demo.mp4</b></a></em></p>
+</div>
+
+---
+
 ## 🏆 Key Benchmark Results
 
 In standard Reinforcement Learning benchmarks ([Stable-Baselines3 Zoo](https://github.com/DLR-RM/rl-baselines3-zoo), [CleanRL](https://github.com/vwxyzjn/cleanrl), [Gymnasium Documentation](https://gymnasium.farama.org/environments/mujoco/humanoid/)):

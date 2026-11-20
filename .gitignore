@@ -3,8 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Large binary replay buffers (>2.7 GB - exceeds GitHub 100MB limit)
+# Large binary replay buffers & uncompressed source video (>100 MB - exceeds GitHub limit)
 *.npz
+Video Project 10.mp4
+
 
 # Virtual environments
 venv/
