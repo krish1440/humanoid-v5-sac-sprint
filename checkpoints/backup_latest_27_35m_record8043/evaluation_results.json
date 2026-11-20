@@ -1,0 +1,43 @@
+{
+  "checkpoint_info": {
+    "model_tag": "LATEST CHECKPOINT",
+    "checkpoint_path": "checkpoints/latest_checkpoint.pt",
+    "backup_folder": "checkpoints/backup_latest_27_35m_record8043",
+    "trained_step": 27350000,
+    "trained_episode": 54164,
+    "best_score_record": 8043.5,
+    "evaluation_mode": "Deterministic (evaluate=True)"
+  },
+  "summary": {
+    "total_episodes": 20,
+    "completed_1000_step_runs": 20,
+    "success_rate_percent": 100.0,
+    "average_score": 7653.0,
+    "max_score": 7851.1,
+    "min_score": 7526.6,
+    "avg_sprint_score_completed": 7653.0,
+    "overall_avg_velocity_mps": 2.46
+  },
+  "episodes": [
+    { "episode": 1, "score": 7582.1, "length_steps": 1000, "avg_forward_velocity_mps": 2.41, "running_mean": 7582.1 },
+    { "episode": 2, "score": 7654.7, "length_steps": 1000, "avg_forward_velocity_mps": 2.46, "running_mean": 7618.4 },
+    { "episode": 3, "score": 7526.6, "length_steps": 1000, "avg_forward_velocity_mps": 2.37, "running_mean": 7587.8 },
+    { "episode": 4, "score": 7683.0, "length_steps": 1000, "avg_forward_velocity_mps": 2.48, "running_mean": 7611.6 },
+    { "episode": 5, "score": 7851.1, "length_steps": 1000, "avg_forward_velocity_mps": 2.64, "running_mean": 7659.5 },
+    { "episode": 6, "score": 7722.4, "length_steps": 1000, "avg_forward_velocity_mps": 2.51, "running_mean": 7670.0 },
+    { "episode": 7, "score": 7730.0, "length_steps": 1000, "avg_forward_velocity_mps": 2.51, "running_mean": 7678.6 },
+    { "episode": 8, "score": 7738.6, "length_steps": 1000, "avg_forward_velocity_mps": 2.53, "running_mean": 7686.1 },
+    { "episode": 9, "score": 7565.8, "length_steps": 1000, "avg_forward_velocity_mps": 2.40, "running_mean": 7672.7 },
+    { "episode": 10, "score": 7548.1, "length_steps": 1000, "avg_forward_velocity_mps": 2.39, "running_mean": 7660.2 },
+    { "episode": 11, "score": 7618.8, "length_steps": 1000, "avg_forward_velocity_mps": 2.44, "running_mean": 7656.5 },
+    { "episode": 12, "score": 7690.4, "length_steps": 1000, "avg_forward_velocity_mps": 2.49, "running_mean": 7659.3 },
+    { "episode": 13, "score": 7561.8, "length_steps": 1000, "avg_forward_velocity_mps": 2.38, "running_mean": 7651.8 },
+    { "episode": 14, "score": 7785.7, "length_steps": 1000, "avg_forward_velocity_mps": 2.58, "running_mean": 7661.4 },
+    { "episode": 15, "score": 7676.5, "length_steps": 1000, "avg_forward_velocity_mps": 2.47, "running_mean": 7662.4 },
+    { "episode": 16, "score": 7552.3, "length_steps": 1000, "avg_forward_velocity_mps": 2.37, "running_mean": 7655.5 },
+    { "episode": 17, "score": 7797.2, "length_steps": 1000, "avg_forward_velocity_mps": 2.57, "running_mean": 7663.8 },
+    { "episode": 18, "score": 7536.9, "length_steps": 1000, "avg_forward_velocity_mps": 2.37, "running_mean": 7656.8 },
+    { "episode": 19, "score": 7554.8, "length_steps": 1000, "avg_forward_velocity_mps": 2.40, "running_mean": 7651.4 },
+    { "episode": 20, "score": 7682.5, "length_steps": 1000, "avg_forward_velocity_mps": 2.48, "running_mean": 7653.0 }
+  ]
+}

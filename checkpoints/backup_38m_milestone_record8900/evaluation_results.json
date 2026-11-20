@@ -1,0 +1,28 @@
+{
+  "checkpoint_info": {
+    "model_tag": "BEST RECORD MODEL",
+    "checkpoint_path": "checkpoints/best_model.pt",
+    "backup_folder": "checkpoints/backup_38m_milestone_record8900",
+    "trained_step": 38015799,
+    "trained_episode": 74000,
+    "best_score_record": 8900.0,
+    "evaluation_mode": "Deterministic (evaluate=True)"
+  },
+  "summary": {
+    "total_episodes": 5,
+    "completed_1000_step_runs": 5,
+    "success_rate_percent": 100.0,
+    "average_score": 8512.0,
+    "max_score": 8809.9,
+    "min_score": 8313.3,
+    "avg_sprint_score_completed": 8512.0,
+    "overall_avg_velocity_mps": 3.20
+  },
+  "episodes": [
+    { "episode": 1, "score": 8809.9, "length_steps": 1000, "avg_forward_velocity_mps": 3.44, "running_mean": 8809.9 },
+    { "episode": 2, "score": 8480.1, "length_steps": 1000, "avg_forward_velocity_mps": 3.19, "running_mean": 8645.0 },
+    { "episode": 3, "score": 8313.3, "length_steps": 1000, "avg_forward_velocity_mps": 3.03, "running_mean": 8534.4 },
+    { "episode": 4, "score": 8483.9, "length_steps": 1000, "avg_forward_velocity_mps": 3.17, "running_mean": 8521.8 },
+    { "episode": 5, "score": 8472.9, "length_steps": 1000, "avg_forward_velocity_mps": 3.17, "running_mean": 8512.0 }
+  ]
+}
