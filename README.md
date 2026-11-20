@@ -12,16 +12,27 @@ An end-to-end, high-performance Deep Reinforcement Learning project that trains 
 
 ## 🏆 Key Benchmark Results
 
-In standard RL literature, `Humanoid-v5` is considered "solved" at **6,000 points**. This trained policy achieves **8,900.0 peak points** with **100% completion rate**:
+In standard Reinforcement Learning benchmarks ([Stable-Baselines3 Zoo](https://github.com/DLR-RM/rl-baselines3-zoo), [CleanRL](https://github.com/vwxyzjn/cleanrl), [Gymnasium Documentation](https://gymnasium.farama.org/environments/mujoco/humanoid/)):
+* Surviving all 1,000 steps without falling awards a constant **Healthy Bonus** of $+5.0$ per step ($= 5,000$ points).
+* Standard walking policies typically finish around **5,000 – 6,000 points** (modest walking pace of ~1.0 m/s).
+* Our policy reaches **8,900.0 peak score** and **8,512.0 deterministic test average** because it doesn't just survive—it accelerates into an Olympic sprint at **+3.20 m/s (~11.5 km/h)**:
 
-| Metric | Official Solved Threshold | Our Trained SAC Policy | Status |
-| :--- | :---: | :---: | :---: |
-| **All-Time Peak Score** | 6,000.0 | **8,900.0** | 🔥 **+48.3% over threshold** |
-| **Deterministic Test Score (Avg)** | ~5,500 – 6,000 | **8,512.0** | 🚀 **Elite Consistency** |
-| **Full 1,000-Step Survival Rate** | ~70 – 80% | **100.0% (5 / 5)** | 🛡️ **Zero Falls** |
-| **Forward Sprint Velocity (Avg)** | ~1.5 – 2.0 m/s | **+3.20 m/s (~11.5 km/h)** | ⚡ **Olympic Sprint** |
-| **Peak Instant Velocity** | ~2.5 m/s | **+3.44 m/s (~12.4 km/h)** | 🏃 **Maximum Thrust** |
-| **Total Environment Steps** | — | **38,046,000+** | 🧠 **74,059 Episodes** |
+| Metric | Our Verified Result | Interpretation & Significance |
+| :--- | :---: | :--- |
+| **All-Time Peak Episode Score** | **8,900.0** | All-time highest training score recorded at Step 38,015,799 |
+| **Deterministic Test Score (Avg)** | **8,512.0** | 5 consecutive seeded test runs in evaluation mode (`evaluate=True`) |
+| **Deterministic Peak Test Score** | **8,809.9** | Highest single evaluation test episode |
+| **Full 1,000-Step Survival Rate** | **100.0% (5 / 5)** | Zero stumbles or falls across the entire evaluation sequence |
+| **Average Forward Velocity** | **+3.20 m/s (~11.5 km/h)** | Sustained high-speed bipedal sprint |
+| **Peak Instant Forward Velocity** | **+3.44 m/s (~12.4 km/h)** | Recorded during Test Episode 1 |
+| **Total Environment Training Steps** | **38,046,000+** | Cumulative transitions collected across 8 parallel MuJoCo workers (74,059 episodes) |
+
+---
+
+### 📚 Official Environment & Baseline References:
+1. **Gymnasium Humanoid-v5 Documentation:** [Farama Foundation Humanoid-v5](https://gymnasium.farama.org/environments/mujoco/humanoid/) (Defines reward weights: healthy reward $= 5.0$, forward velocity weight $= 1.25$).
+2. **Stable-Baselines3 Benchmark Zoo:** [RL Baselines3 Zoo Benchmarks](https://github.com/DLR-RM/rl-baselines3-zoo) (Reference baseline for SAC on MuJoCo Humanoid: ~5,500–6,000 average return for stable walking).
+3. **Soft Actor-Critic (SAC) Original Paper:** Haarnoja et al., 2018. *"Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor"*. [arXiv:1801.01290](https://arxiv.org/abs/1801.01290).
 
 ---
 
